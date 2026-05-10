@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Je Brein van Binnen — MS & Dendriet Onderzoek</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-bg">
+      <canvas id="neuron-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="pill">Nieuw wetenschappelijk onderzoek · 2024</div>
+      <h1>Je brein van <em>binnen</em></h1>
+      <p class="hero-sub">Onderzoekers hebben voor het eerst live gekeken hoe signalen door de vertakkingen van hersencellen reizen — en wat dit betekent voor mensen met MS.</p>
+      <div class="hero-cta">
+        <a href="#uitleg" class="btn-primary">Ontdek het onderzoek</a>
+        <a href="#tool" class="btn-ghost">Interactieve tool →</a>
+      </div>
+    </div>
+    <div class="scroll-hint">↓</div>
+  </section>
+
+  <!-- WAT IS MS SECTIE -->
+  <section class="section" id="uitleg">
+    <div class="container">
+      <div class="section-label">Stap 1 · Begrijp de basis</div>
+      <h2>Wat gebeurt er in jouw brein bij MS?</h2>
+      <div class="cards-grid">
+        <div class="card card--blue" data-aos>
+          <div class="card-icon">🧠</div>
+          <h3>Neuronen & dendrieten</h3>
+          <p>Je hersencellen (neuronen) hebben lange armen die signalen ontvangen: <strong>dendrieten</strong>. Stel je een boom voor — de stam is het cellichaam, de takken zijn de dendrieten. Via die takken "praten" hersencellen met elkaar.</p>
+        </div>
+        <div class="card card--orange" data-aos>
+          <div class="card-icon">⚡</div>
+          <h3>Elektrische signalen</h3>
+          <p>Hersencellen communiceren via kleine elektrische stroompjes. Die stroom schiet van de stam naar de takken en weer terug. Bij MS kan dit verstoord raken omdat de isolatie (<strong>myeline</strong>) rondom zenuwcellen wordt aangevallen.</p>
+        </div>
+        <div class="card card--green" data-aos>
+          <div class="card-icon">🔥</div>
+          <h3>Calcium als alarm</h3>
+          <p>Naast elektriciteit speelt <strong>calcium</strong> een grote rol. Calcium stroomt cellen in als reactie op signalen. Teveel calcium is gevaarlijk — het kan zenuwcellen beschadigen. Bij MS gaat dit evenwicht vaak mis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIEVE NEURON VISUALISATIE -->
+  <section class="section section--dark" id="tool">
+    <div class="container">
+      <div class="section-label light">Stap 2 · Interactieve tool</div>
+      <h2 class="light">Stuur zelf een signaal door een hersencel</h2>
+      <p class="intro light">Klik op de knoppen om te zien hoe signalen door een gezonde hersencel reizen — en hoe dat verandert bij MS-schade.</p>
+
+      <div class="sim-wrapper">
+        <div class="sim-controls">
+          <div class="control-group">
+            <label>Schade door MS</label>
+            <div class="toggle-row">
+              <span>Gezond</span>
+              <label class="toggle">
+                <input type="checkbox" id="ms-toggle" />
+                <span class="slider"></span>
+              </label>
+              <span>MS-schade</span>
+            </div>
+          </div>
+          <div class="control-group">
+            <label>Type signaal</label>
+            <div class="btn-group">
+              <button class="sig-btn active" data-type="burst">Burst (meerdere)</button>
+              <button class="sig-btn" data-type="single">Enkel signaal</button>
+            </div>
+          </div>
+          <div class="control-group">
+            <label>Signaalsterkte op afstand</label>
+            <div class="strength-meter">
+              <div class="strength-bar" id="strength-bar">
+                <div class="strength-fill" id="strength-fill"></div>
+              </div>
+              <div class="strength-labels">
+                <span>Cellichaam</span>
+                <span>Ver weg</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn-primary full" id="fire-btn">🔥 Stuur signaal</button>
+          <div class="legend">
+            <div class="legend-item"><span class="dot voltage"></span> Elektrisch signaal</div>
+            <div class="legend-item"><span class="dot calcium"></span> Calcium-signaal</div>
+          </div>
+        </div>
+
+        <div class="sim-canvas-wrap">
+          <canvas id="neuron-sim" width="620" height="480"></canvas>
+          <div class="sim-info" id="sim-info">
+            <p>👆 Klik op <strong>"Stuur signaal"</strong> om te beginnen</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEVINDINGEN -->
+  <section class="section" id="bevindingen">
+    <div class="container">
+      <div class="section-label">Stap 3 · Wat ontdekten de onderzoekers?</div>
+      <h2>Drie sleutelbevindingen</h2>
+
+      <div class="findings">
+        <div class="finding" data-aos>
+          <div class="finding-num">01</div>
+          <div class="finding-body">
+            <h3>Bursts reizen verder dan losse signalen</h3>
+            <p>Wanneer een hersencel meerdere signalen snel achter elkaar stuurt (een "burst"), dringen die veel betrouwbaarder door tot ver in de dendrieten dan een enkel signaal. Dit is als het verschil tussen één tikje geven op een deur en er hard op kloppen — het kloppende patroon wordt beter gehoord.</p>
+            <div class="finding-tag">💡 Relevant voor MS: bij MS kunnen dendrieten beschadigd raken, waardoor zelfs bursts niet meer goed doorkomen.</div>
+          </div>
+        </div>
+
+        <div class="finding" data-aos>
+          <div class="finding-num">02</div>
+          <div class="finding-body">
+            <h3>Signalen worden zwakker met de afstand</h3>
+            <p>Hoe verder van het cellichaam, hoe zwakker het elektrische signaal aankomt in de dendrieten. Dit is normaal en gezond — maar bij MS, waar myeline is beschadigd, verloopt die verzwakking veel sneller en grilliger. Signalen "lekken" weg voor ze hun bestemming bereiken.</p>
+            <div class="finding-tag">💡 Dit verklaart mede waarom MS-patiënten moeite hebben met signaaloverdracht en cognitieve verwerking.</div>
+          </div>
+        </div>
+
+        <div class="finding" data-aos>
+          <div class="finding-num">03</div>
+          <div class="finding-body">
+            <h3>Elektriciteit en calcium raken ontkoppeld</h3>
+            <p>In de fijnste, verst gelegen dendriettakken kunnen elektrische signalen voorkomen zónder dat calcium mee omhoog gaat. Normaal werken ze samen. In MS is het calcium-evenwicht verstoord — teveel calcium kan zenuwcellen beschadigen of doden. Begrijpen hoe dit normaal geregeld wordt, helpt ons te snappen waar het misgaat.</p>
+            <div class="finding-tag">💡 Mogelijke aanknoping voor nieuwe neuroprotectieve medicijnen die gericht calcium reguleren.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MS IMPACT SECTIE -->
+  <section class="section section--warm" id="ms-impact">
+    <div class="container">
+      <div class="section-label">Stap 4 · Wat betekent dit voor jou?</div>
+      <h2>Van lab naar leven met MS</h2>
+      <div class="impact-grid">
+        <div class="impact-card" data-aos>
+          <div class="impact-icon">🔬</div>
+          <h4>Vroegere diagnose</h4>
+          <p>Als dendritische verstoringen vroeg meetbaar zijn, kunnen artsen MS-progressie eerder opsporen dan huidige MRI-scans — mogelijk voordat je er zelf last van hebt.</p>
+        </div>
+        <div class="impact-card" data-aos>
+          <div class="impact-icon">🧪</div>
+          <h4>Betere medicijnen</h4>
+          <p>Inzicht in dendriet-specifieke signaalwegen biedt nieuwe doelwitten voor medicijnen die zenuwcellen <em>beschermen</em>, niet alleen de ontsteking remmen.</p>
+        </div>
+        <div class="impact-card" data-aos>
+          <div class="impact-icon">🧩</div>
+          <h4>Cognitie verklaard</h4>
+          <p>Veel MS-klachten over "hersenmist" en geheugen zijn slecht zichtbaar op MRI. Lokale dendrietstoornissen in de hippocampus kunnen hier een verklaring voor zijn.</p>
+        </div>
+        <div class="impact-card" data-aos>
+          <div class="impact-icon">⏳</div>
+          <h4>Eerlijk over de tijdlijn</h4>
+          <p>Dit is fundamenteel onderzoek. De weg naar klinische toepassingen duurt jaren. Maar elk puzzelstukje telt — en dit is een groot stuk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WOORDENLIJST -->
+  <section class="section" id="woordenlijst">
+    <div class="container narrow">
+      <div class="section-label">Extra · Woordenlijst</div>
+      <h2>Moeilijke woorden simpel uitgelegd</h2>
+      <div class="glossary" id="glossary"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Gebaseerd op gepubliceerd wetenschappelijk onderzoek naar dendritische voltage-imaging in vivo · Gemaakt voor mensen met MS en andere chronische hersenaandoeningen</p>
+      <p class="footer-small">Deze pagina is informatief en vervangt geen medisch advies. Neem bij vragen contact op met je neuroloog.</p>
+    </div>
+  </footer>
+
+  <script src="js/canvas-bg.js"></script>
+  <script src="js/simulator.js"></script>
+  <script src="js/glossary.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
